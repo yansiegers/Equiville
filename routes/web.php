@@ -55,3 +55,30 @@ Route::get('/algemene-voorwaarden', function () {
 Route::get('/privacybeleid', function () {
     return view('pages.privacy');
 })->name('pages.privacy');
+
+// === Platform ================================
+
+Route::get('/winkel', function () {
+    return view('platform.shop');
+})->name('platform.shop');
+
+Route::get('/marktplaats', function () {
+    return view('platform.marketplace');
+})->name('platform.marketplace');
+
+Route::get('/forum', function () {
+    return view('platform.forum');
+})->name('platform.forum');
+
+Route::get('/landgoed', function () {
+    return view('platform.estate');
+})->name('platform.estate');
+
+Route::get('/profiel', function () {
+    return view('platform.profile');
+})->name('platform.profile');
+
+
+Route::get('/spelers', function () {
+    return view('platform.players');
+})->name('platform.players');
